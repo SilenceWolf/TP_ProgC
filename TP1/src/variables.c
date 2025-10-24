@@ -22,28 +22,29 @@ int main(){
   double var_double=0.1254;
   long double var_long_double=0.1365485446958456;
 
-  printf("var char size : %li\n" ,sizeof(var_char));
-  printf("var char unsigned size : %lu\n" ,sizeof(var_char_unsigned));
+  printf("var char : %li\n" ,var_char);
+  printf("var char unsigned : %lu\n" ,var_char_unsigned);
   
-  printf("var short size : %li\n" ,sizeof(var_short));
-  printf("var short unsigned size : %lu\n" ,sizeof(var_short_unsigned));
+  printf("var short : %li\n" ,var_short);
+  printf("var short unsigned : %lu\n" var_short_unsigned);
   
-  printf("var int size : %li\n" ,sizeof(var_int));
-  printf("var int unsigned size : %lu\n" ,sizeof(var_int_unsigned));
+  printf("var int : %li\n" ,var_int);
+  printf("var int unsigned : %lu\n" ,var_int_unsigned);
   
-  printf("var long int size : %li\n" ,sizeof(var_long_int));
-  printf("var long int unsigned size : %lu\n" ,sizeof(var_long_int_unsigned));
+  printf("var long int : %li\n" ,var_long_int);
+  printf("var long int unsigned : %lu\n" ,var_long_int_unsigned);
   
-  printf("var long long int size : %li\n" ,sizeof(var_long_long_int));
-  printf("var long long int unsigned size : %lu\n" ,sizeof(var_long_long_int_unsigned));
+  printf("var long long int : %li\n" ,var_long_long_int);
+  printf("var long long int unsigned : %lu\n" ,var_long_long_int_unsigned);
   
-  printf("var float size : %ld\n" ,sizeof(var_float));
-  printf("var double size : %ld\n" ,sizeof(var_double));
-  printf("var long size : %ld\n" ,sizeof(var_long_double));
+  printf("var float : %ld\n" ,var_float);
+  printf("var double : %ld\n" ,var_double);
+  printf("var long : %ld\n" ,var_long_double);
   
   
   
 }
+
 
 
 
