@@ -2,15 +2,17 @@
 #include <string.h>
 
 int main(){
-
+  int i;
+  int j;
   for(i=0;i<10;i++){
-    print("*")
+    print("*");
     for(j=1;j<i;j++){
 
-      print("#")
+      print("#");
 
     
   }
 
 
 }
+
