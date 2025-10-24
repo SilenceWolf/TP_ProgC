@@ -15,7 +15,7 @@ int main(){
                 
                 if (j==1||j==i) {
                     printf("* ");
-                else
+                }else{
                     printf("# ");
                 }
 
@@ -25,6 +25,7 @@ int main(){
 
 
 }
+
 
 
 
