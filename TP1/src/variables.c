@@ -37,13 +37,14 @@ int main(){
   printf("var long long int size : %li\n" ,sizeof(var_long_long_int));
   printf("var long long int unsigned size : %lu\n" ,sizeof(var_long_long_int_unsigned));
   
-  printf("var float size : %double\n" ,sizeof(var_float));
-  printf("var double size : %double\n" ,sizeof(var_double));
-  printf("var long size : %double\n" ,sizeof(var_long_double));
+  printf("var float size : %ld\n" ,sizeof(var_float));
+  printf("var double size : %ld\n" ,sizeof(var_double));
+  printf("var long size : %ld\n" ,sizeof(var_long_double));
   
   
   
 }
+
 
 
 
