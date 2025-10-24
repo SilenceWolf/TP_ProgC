@@ -3,8 +3,8 @@
 
 int main(){
   
-  char var_char="eeeeeeee";
-  unsigned char var_char_unsigned="ééééé";
+  char var_char=e;
+  unsigned char var_char_unsigned=é;
   
   short var_short=3;
   unsigned short var_short_unsigned=-3;
@@ -15,8 +15,8 @@ int main(){
   long int var_long_int=88888888888;
   unsigned long int var_long_int_unsigned=-8888888888888888;
   
-  long long int var_long_long_int=9999999999999999999999999;
-  unsigned long long int var_long_long_int_unsigned=-9999999999999999999999;
+  long long int var_long_long_int=999999999999999;
+  unsigned long long int var_long_long_int_unsigned=-9999999999999;
   
   float var_float=0.1;
   double var_double=0.1254;
@@ -44,5 +44,6 @@ int main(){
   
   
 }
+
 
 
