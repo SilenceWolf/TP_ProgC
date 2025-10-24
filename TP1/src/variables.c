@@ -4,7 +4,7 @@
 int main(){
   
   char var_char='e';
-  unsigned char var_char_unsigned='é';
+  unsigned char var_char_unsigned='E';
   
   short var_short=3;
   unsigned short var_short_unsigned=-3;
@@ -44,6 +44,7 @@ int main(){
   
   
 }
+
 
 
 
