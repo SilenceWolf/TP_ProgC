@@ -10,18 +10,14 @@ int main(){
   
   for(i=1;(i<=taille)&&(taille<=10);i++){
     
-    for(j=1;j<=i;j++){
-      
-      
-            if (i == 1 || i == 5)
-                printf("* ");
-            else {
+    for(j=1;(j<=2)&&(j<=i);j++){
+
                 
-                if (j % 2 == 1)
+                if (j==1||j==i) {
                     printf("* ");
                 else
                     printf("# ");
-            }
+                }
 
     }
     printf("\n");
@@ -29,6 +25,7 @@ int main(){
 
 
 }
+
 
 
 
