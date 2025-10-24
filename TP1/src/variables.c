@@ -34,16 +34,17 @@ int main(){
   printf("var long int : %li\n" ,var_long_int);
   printf("var long int unsigned : %lu\n" ,var_long_int_unsigned);
   
-  printf("var long long int : %li\n" ,var_long_long_int);
-  printf("var long long int unsigned : %lu\n" ,var_long_long_int_unsigned);
+  printf("var long long int : %lli\n" ,var_long_long_int);
+  printf("var long long int unsigned : %llu\n" ,var_long_long_int_unsigned);
   
   printf("var float : %f\n" ,var_float);
   printf("var double : %f\n" ,var_double);
-  printf("var long : %lf\n" ,var_long_double);
+  printf("var long : %Lf\n" ,var_long_double);
   
   
   
 }
+
 
 
 
