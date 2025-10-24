@@ -12,11 +12,16 @@ int main(){
     
     for(j=1;j<=i;j++){
       
-      if (j%2==1 || i==1 || i==taille) {
-        printf("*");
-      } else{
-        printf("#");
-      }
+      
+            if (i == 1 || i == 5)
+                printf("* ");
+            else {
+                
+                if (j % 2 == 1)
+                    printf("* ");
+                else
+                    printf("# ");
+            }
 
     }
     printf("\n");
@@ -24,6 +29,7 @@ int main(){
 
 
 }
+
 
 
 
