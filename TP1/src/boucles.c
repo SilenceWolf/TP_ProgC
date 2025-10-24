@@ -25,7 +25,25 @@ int main(){
         printf("\n");
     }
 
+  while (i <= taille){
+    while (j <= i){
+        if (i == 1 || i == taille) {
+                printf("* ");
+            }
+            
+            else if (j == 1 || j == i) {
+                printf("* ");
+            } else {
+                printf("# ");
+            }
+      j++
+    }
+    printf("\n");
+    i++
+  }
+
 }
+
 
 
 
