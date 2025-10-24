@@ -8,23 +8,24 @@ int main(){
   printf("la taille du triangle: ");
   scanf("%d", &taille);
   
-  for(i=1;(i<=taille)&&(taille<=10);i++){
-    
-    for(j=2;(j<=2)&&(j<=i);j++){
+  for (i = 1; i <= taille; i++) {
+        for (j = 1; j <= i; j++) {
 
-                
-                if (j==1||j==i) {
-                    printf("* ");
-                }else{
-                    printf("# ");
-                }
-
+            // Première et dernière ligne → que des *
+            if (i == 1 || i == taille) {
+                printf("* ");
+            }
+            // Sinon : * aux bords, # à l'intérieur
+            else if (j == 1 || j == i) {
+                printf("* ");
+            } else {
+                printf("# ");
+        }
+        printf("\n");
     }
-    printf("\n");
-  }
-
 
 }
+
 
 
 
