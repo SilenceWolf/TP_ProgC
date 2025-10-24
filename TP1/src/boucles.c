@@ -5,11 +5,14 @@ int main(){
   int i;
   int j;
   for(i=0;i<10;i++){
-    printf("*");
+    
     for(j=1;j<i-1;j++){
       
-      
-      printf("#");
+      if (j==i) {
+        printf("#");
+      } else{
+        printf("*");
+      }
 
     }
     printf("\n");
@@ -17,6 +20,7 @@ int main(){
 
 
 }
+
 
 
 
