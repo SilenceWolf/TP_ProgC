@@ -28,8 +28,8 @@ int main(){
   printf("var short : %i\n" ,var_short);
   printf("var short unsigned : %u\n", var_short_unsigned);
   
-  printf("var int : %li\n" ,var_int);
-  printf("var int unsigned : %lu\n" ,var_int_unsigned);
+  printf("var int : %i\n" ,var_int);
+  printf("var int unsigned : %u\n" ,var_int_unsigned);
   
   printf("var long int : %li\n" ,var_long_int);
   printf("var long int unsigned : %lu\n" ,var_long_int_unsigned);
@@ -37,13 +37,14 @@ int main(){
   printf("var long long int : %li\n" ,var_long_long_int);
   printf("var long long int unsigned : %lu\n" ,var_long_long_int_unsigned);
   
-  printf("var float : %ld\n" ,var_float);
-  printf("var double : %ld\n" ,var_double);
-  printf("var long : %ld\n" ,var_long_double);
+  printf("var float : %f\n" ,var_float);
+  printf("var double : %f\n" ,var_double);
+  printf("var long : %lf\n" ,var_long_double);
   
   
   
 }
+
 
 
 
