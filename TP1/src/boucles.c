@@ -8,7 +8,7 @@ int main(){
   printf("la taille du triangle: ");
   scanf("%d", &taille);
   
-  for(i=0;i<taille<10;i++){
+  for(i=0;(i<taille)&&(taille<10);i++){
     
     for(j=0;j<i;j++){
       
@@ -24,6 +24,7 @@ int main(){
 
 
 }
+
 
 
 
