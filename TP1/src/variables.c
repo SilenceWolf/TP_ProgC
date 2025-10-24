@@ -22,11 +22,11 @@ int main(){
   double var_double=0.1254;
   long double var_long_double=0.1365485446958456;
 
-  printf("var char : %li\n" ,var_char);
-  printf("var char unsigned : %lu\n" ,var_char_unsigned);
+  printf("var char : %i\n" ,var_char);
+  printf("var char unsigned : %u\n" ,var_char_unsigned);
   
-  printf("var short : %li\n" ,var_short);
-  printf("var short unsigned : %lu\n" var_short_unsigned);
+  printf("var short : %i\n" ,var_short);
+  printf("var short unsigned : %u\n", var_short_unsigned);
   
   printf("var int : %li\n" ,var_int);
   printf("var int unsigned : %lu\n" ,var_int_unsigned);
@@ -44,6 +44,7 @@ int main(){
   
   
 }
+
 
 
 
