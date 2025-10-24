@@ -5,7 +5,7 @@ int main(){
   int i;
   int j;
   int taille;
-  printf("la taille du triangle: ")
+  printf("la taille du triangle: ");
   scanf("%i", &taille);
   
   for(i=0;i<taille<10;i++){
@@ -24,6 +24,7 @@ int main(){
 
 
 }
+
 
 
 
