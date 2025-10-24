@@ -24,8 +24,9 @@ int main(){
         }
         printf("\n");
     }
-
+  i=0;
   while (i <= taille){
+    j=0;
     while (j <= i){
         if (i == 1 || i == taille) {
                 printf("* ");
@@ -43,6 +44,7 @@ int main(){
   }
 
 }
+
 
 
 
