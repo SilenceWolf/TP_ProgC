@@ -2,8 +2,8 @@
 #include <string.h>
 
 
-float a = 16;
-float b = 3;
+int a = 16;
+int b = 3;
 
 
 
@@ -19,5 +19,6 @@ int main(){
 
 
 }
+
 
 
