@@ -14,9 +14,10 @@ int main(){
   printf("multiplication : %f",a*b);
   printf("division : %f",a/b);
   printf("modulo : %f", a%b );
-  printf("égale : %f",a==b);
-  printf("supérieur : %f",a>b);
+  printf("égale : %d",a==b);
+  printf("supérieur : %d",a>b);
 
 
 }
+
 
