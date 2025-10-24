@@ -36,13 +36,14 @@ int main(){
             } else {
                 printf("# ");
             }
-      j++
+      j++;
     }
     printf("\n");
-    i++
+    i++;
   }
 
 }
+
 
 
 
