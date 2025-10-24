@@ -4,6 +4,7 @@
 int main(){
   
   char var_char;
+  unsigned char var_char_unsigned;
   
   short var_short;
   unsigned short var_short_unsigned;
@@ -22,6 +23,7 @@ int main(){
   long double var_long_double;
 
   printf("var char size : %zu octet(s)\n" ,sizeof(var_char));
+  printf("var char unsigned size : %zu octet(s)\n" ,sizeof(var_char_unsigned));
   
   printf("var short size : %zu octet(s)\n" ,sizeof(var_short));
   printf("var short unsigned size : %zu octet(s)\n" ,sizeof(var_short_unsigned));
@@ -44,6 +46,7 @@ int main(){
 
   
 }
+
 
 
 
