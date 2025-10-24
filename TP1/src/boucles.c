@@ -10,7 +10,7 @@ int main(){
   
   for(i=1;(i<=taille)&&(taille<=10);i++){
     
-    for(j=1;(j<=2)&&(j<=i);j++){
+    for(j=2;(j<=2)&&(j<=i);j++){
 
                 
                 if (j==1||j==i) {
@@ -25,6 +25,7 @@ int main(){
 
 
 }
+
 
 
 
