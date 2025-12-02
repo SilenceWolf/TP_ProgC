@@ -1,5 +1,6 @@
 #include "liste.h"
 #include <stdio.h>
+#include <string.h>
 #include <stdlib.h>
 
 void init_liste(struct liste_couleurs *liste) {
@@ -21,3 +22,4 @@ void parcours(struct liste_couleurs *liste) {
         courant = courant->suivant;
     }
 }
+
