@@ -4,7 +4,7 @@
 int main() {
     int num1 = 20;
     int num2 = 6;
-    char op = '&';  // change selon vos tests
+    char op = '&';  
 
     int resultat;
 
@@ -46,4 +46,5 @@ int main() {
     printf("Résultat = %d\n", resultat);
     return 0;
 }
+
 
