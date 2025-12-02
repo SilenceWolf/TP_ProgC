@@ -1,5 +1,6 @@
 #include "operator.h"
 #include <stdio.h>
+#include <string.h>
 
 int calculer(int a, int b, char op) {
     switch(op) {
@@ -26,4 +27,5 @@ int calculer(int a, int b, char op) {
             return 0;
     }
 }
+
 
