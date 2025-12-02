@@ -1,29 +1,23 @@
 #include "liste.h"
 #include <stdio.h>
-#include <string.h>
+#include <stdlib.h>
 
+void init_liste(struct liste_couleurs *liste) {
+    liste->tete = NULL;
+}
 
-void exercice_4_7() {
-    struct liste_couleurs ma_liste;
-    init_liste(&ma_liste);
+void insertion(struct couleur *c, struct liste_couleurs *liste) {
+    struct couleur *nouveau = malloc(sizeof(struct couleur));
+    if (!nouveau) return;
+    *nouveau = *c;
+    nouveau->suivant = liste->tete;
+    liste->tete = nouveau;
+}
 
-    struct couleur couleurs[10] = {
-        {0xFF, 0x00, 0x00, 0xFF}, // rouge
-        {0x00, 0xFF, 0x00, 0xFF}, // vert
-        {0x00, 0x00, 0xFF, 0xFF}, // bleu
-        {0xFF, 0xFF, 0x00, 0xFF}, // jaune
-        {0xFF, 0x00, 0xFF, 0xFF}, // magenta
-        {0x00, 0xFF, 0xFF, 0xFF}, // cyan
-        {0x80, 0x80, 0x80, 0xFF}, // gris
-        {0xFF, 0x80, 0x00, 0xFF}, // orange
-        {0x80, 0x00, 0x80, 0xFF}, // violet
-        {0x00, 0x80, 0x80, 0xFF}  // bleu foncé
-    };
-
-    for(int i=0; i<10; i++) {
-        insertion(&couleurs[i], &ma_liste);
+void parcours(struct liste_couleurs *liste) {
+    struct couleur *courant = liste->tete;
+    while (courant) {
+        printf("R:%d G:%d B:%d A:%d\n", courant->r, courant->g, courant->b, courant->a);
+        courant = courant->suivant;
     }
-
-    printf("Liste des couleurs :\n");
-    parcours(&ma_liste);
 }
