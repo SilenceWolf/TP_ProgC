@@ -1,30 +1,29 @@
 #include "operator.h"
 #include <stdio.h>
-#include <string.h>
 
-void exercice_4_1() {
-    int num1, num2;
-    char op;
-
-    printf("Exercice 4.1 : Calcul avec opérateurs\n");
-    printf("Entrez num1 : ");
-    scanf("%d", &num1);
-    printf("Entrez num2 : ");
-    scanf("%d", &num2);
-    printf("Entrez l'opérateur (+, -, *, /, %, &, |, ~) : ");
-    scanf(" %c", &op);
-
+int calculer(int a, int b, char op) {
     switch(op) {
-        case '+': printf("Résultat : %d\n", somme(num1, num2)); break;
-        case '-': printf("Résultat : %d\n", difference(num1, num2)); break;
-        case '*': printf("Résultat : %d\n", produit(num1, num2)); break;
-        case '/': printf("Résultat : %d\n", quotient(num1, num2)); break;
-        case '%': printf("Résultat : %d\n", modulo(num1, num2)); break;
-        case '&': printf("Résultat : %d\n", et(num1, num2)); break;
-        case '|': printf("Résultat : %d\n", ou(num1, num2)); break;
-        case '~': printf("Résultat : %d\n", negation(num1)); break;
-        default: printf("Opérateur invalide\n"); break;
+        case '+': return a + b;
+        case '-': return a - b;
+        case '*': return a * b;
+        case '/': 
+            if (b != 0) return a / b;
+            else {
+                printf("Erreur: division par zéro\n");
+                return 0;
+            }
+        case '%': 
+            if (b != 0) return a % b;
+            else {
+                printf("Erreur: modulo par zéro\n");
+                return 0;
+            }
+        case '&': return a & b;
+        case '|': return a | b;
+        case '~': return ~a; // Ignore b pour la négation
+        default: 
+            printf("Opérateur inconnu.\n");
+            return 0;
     }
 }
-
 
