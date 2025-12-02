@@ -1,5 +1,7 @@
 #ifndef FICHIER_H
 #define FICHIER_H
+#include <stdio.h>
+#include <string.h>
 
 void lire_fichier(const char *nom_de_fichier) {
     FILE *f = fopen(nom_de_fichier, "r");
@@ -26,3 +28,4 @@ void ecrire_dans_fichier(const char *nom_de_fichier, const char *message) {
 }
 
 #endif
+
