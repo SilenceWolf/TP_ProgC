@@ -1,5 +1,6 @@
 #include "fichier.h"
 #include <stdio.h>
+#include <string.h>
 
 void lire_fichier(const char *nom_de_fichier) {
     FILE *f = fopen(nom_de_fichier, "r");
@@ -24,5 +25,6 @@ void ecrire_dans_fichier(const char *nom_de_fichier, const char *message) {
     fclose(f);
     printf("Le message a été écrit dans le fichier %s.\n", nom_de_fichier);
 }
+
 
 
