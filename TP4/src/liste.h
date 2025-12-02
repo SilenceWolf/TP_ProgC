@@ -1,24 +1,22 @@
-void exercice_4_7() {
-    struct liste_couleurs ma_liste;
-    init_liste(&ma_liste);
+#ifndef LISTE_H
+#define LISTE_H
 
-    struct couleur couleurs[10] = {
-        {0xFF, 0x00, 0x00, 0xFF}, // rouge
-        {0x00, 0xFF, 0x00, 0xFF}, // vert
-        {0x00, 0x00, 0xFF, 0xFF}, // bleu
-        {0xFF, 0xFF, 0x00, 0xFF}, // jaune
-        {0xFF, 0x00, 0xFF, 0xFF}, // magenta
-        {0x00, 0xFF, 0xFF, 0xFF}, // cyan
-        {0x80, 0x80, 0x80, 0xFF}, // gris
-        {0xFF, 0x80, 0x00, 0xFF}, // orange
-        {0x80, 0x00, 0x80, 0xFF}, // violet
-        {0x00, 0x80, 0x80, 0xFF}  // bleu foncé
-    };
 
-    for(int i=0; i<10; i++) {
-        insertion(&couleurs[i], &ma_liste);
-    }
-
-    printf("Liste des couleurs :\n");
-    parcours(&ma_liste);
+void init_liste(struct liste_couleurs *liste) {
+    liste->tete = NULL;
 }
+
+void insertion(struct couleur *c, struct liste_couleurs *liste) {
+    c->suivant = liste->tete;
+    liste->tete = c;
+}
+
+void parcours(struct liste_couleurs *liste) {
+    struct couleur *courant = liste->tete;
+    while (courant) {
+        printf("Couleur RGBA : %02X %02X %02X %02X\n", courant->r, courant->g, courant->b, courant->a);
+        courant = courant->suivant;
+    }
+}
+
+#endif
