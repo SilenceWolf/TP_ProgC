@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <string.h>
+#include "fichier.h"
 
 void exercice_4_2() {
     int choix;
@@ -25,4 +26,5 @@ void exercice_4_2() {
         printf("Choix invalide.\n");
     }
 }
+
 
