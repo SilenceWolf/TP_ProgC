@@ -6,7 +6,7 @@ int main() {
 
     for (int i = 1; i <= 1000; i++) {
         if (i % 11 == 0) {
-            continue; // on passe directement au suivant
+            continue; 
         }
 
         if (i % 5 == 0 || i % 7 == 0) {
@@ -14,10 +14,11 @@ int main() {
         }
 
         if (somme > 5000) {
-            break; // on arrête immédiatement
+            break; 
         }
     }
 
     printf("Somme finale = %d\n", somme);
     return 0;
 }
+
