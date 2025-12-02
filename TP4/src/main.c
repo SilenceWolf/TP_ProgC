@@ -11,18 +11,7 @@ void exercice_4_1() {
     printf("Entrez num2: "); scanf("%d", &num2);
     printf("Entrez l'opérateur (+, -, *, /, %, &, |, ~): "); scanf(" %c", &op);
 
-    int resultat;
-    switch(op) {
-        case '+': resultat = somme(num1, num2); break;
-        case '-': resultat = difference(num1, num2); break;
-        case '*': resultat = produit(num1, num2); break;
-        case '/': resultat = quotient(num1, num2); break;
-        case '%': resultat = modulo(num1, num2); break;
-        case '&': resultat = et(num1, num2); break;
-        case '|': resultat = ou(num1, num2); break;
-        case '~': resultat = negation(num1); break;
-        default: printf("Opérateur inconnu.\n"); return;
-    }
+    int resultat = calculer(num1, num2, op);
     printf("Résultat: %d\n", resultat);
 }
 
