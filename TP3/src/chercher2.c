@@ -3,16 +3,6 @@
 
 
 
-int equals(char *a, char *b) {
-    int i = 0;
-    while (a[i] && b[i]) {
-        if (a[i] != b[i])
-            return 0;
-        i++;
-    }
-    return a[i] == b[i];
-}
-
 int main() {
     char phrases[10][200] = {
         "Bonjour, comment ca va ?",
@@ -27,23 +17,33 @@ int main() {
         "Programmer en C, c'est genial."
     };
 
-    char recherche[200];
+    char input[200];
 
     for (int i = 0; i < 10; i++)
         printf("%s\n", phrases[i]);
     
-    printf("Entrez la phrase a chercher : ");
-    fgets(recherche, 200, stdin);
+    printf("Entrez la phrase : ");
+    fgets(input, sizeof(input), stdin);
 
-    int found = 0;
-    for (int i = 0; i < 10; i++)
-        if (equals(phrases[i], recherche))
-            found = 1;
+    int len = strlen(input);
+    if(input[len-1] == '\n')
+        input[len-1] = '\0';
 
-    if (found)
-        printf("Phrase trouvee\n");
+    int trouve = 0;
+    for(int i=0;i<10;i++){
+        int j=0;
+        while(input[j] == phrases[i][j] && input[j] != '\0')
+            j++;
+        if(input[j] == '\0' && phrases[i][j] == '\0'){
+            trouve = 1;
+            break;
+        }
+    }
+
+    if(trouve)
+        printf("Phrase trouvée\n");
     else
-        printf("Phrase non trouvee\n");
+        printf("Phrase non trouvée\n");
 
     return 0;
 }
