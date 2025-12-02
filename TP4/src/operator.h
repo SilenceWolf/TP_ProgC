@@ -1,29 +1,7 @@
-void exercice_4_1() {
-    int num1, num2;
-    char op;
+#ifndef OPERATOR_H
+#define OPERATOR_H
 
-    printf("Entrez num1 : ");
-    scanf("%d", &num1);
-    printf("Entrez num2 : ");
-    scanf("%d", &num2);
-    printf("Entrez l'opérateur (+, -, *, /, %%, &, |, ~) : ");
-    scanf(" %c", &op); // Note l'espace avant %c pour ignorer les '\n'
+// Fonction unique qui fait toutes les opérations
+int calcul(int num1, int num2, char op);
 
-    int resultat;
-
-    switch(op) {
-        case '+': resultat = somme(num1, num2); break;
-        case '-': resultat = difference(num1, num2); break;
-        case '*': resultat = produit(num1, num2); break;
-        case '/': resultat = quotient(num1, num2); break;
-        case '%': resultat = modulo(num1, num2); break;
-        case '&': resultat = et(num1, num2); break;
-        case '|': resultat = ou(num1, num2); break;
-        case '~': resultat = negation(num1); break; // on ignore num2
-        default:
-            printf("Opérateur invalide.\n");
-            return;
-    }
-
-    printf("Résultat : %d\n", resultat);
-}
+#endif
