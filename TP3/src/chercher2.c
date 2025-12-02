@@ -28,6 +28,10 @@ int main() {
     };
 
     char recherche[200];
+
+    for (int i = 0; i < 10; i++)
+        printf("%s\n", phrases[i]);
+    
     printf("Entrez la phrase a chercher : ");
     fgets(recherche, 200, stdin);
 
