@@ -1,3 +1,6 @@
+#include <stdio.h>
+#include <string.h>
+
 void chercher_phrase(const char *nom_fichier, const char *phrase) {
     FILE *f = fopen(nom_fichier, "r");
     if (!f) {
@@ -27,3 +30,4 @@ void chercher_phrase(const char *nom_fichier, const char *phrase) {
 
     fclose(f);
 }
+
