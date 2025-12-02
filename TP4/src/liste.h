@@ -15,3 +15,4 @@ void insertion(struct couleur *c, struct liste_couleurs *liste);
 void parcours(struct liste_couleurs *liste);
 
 #endif
+
