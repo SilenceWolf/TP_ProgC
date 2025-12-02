@@ -2,9 +2,9 @@
 #include <string.h>
 
 
-#include "operator.h"  // pour 4.1
-#include "fichier.h"   // pour 4.2
-#include "liste.h"     // pour 4.7
+#include "operator.h"  
+#include "fichier.h"   
+#include "liste.h"    
 
 // Déclaration des fonctions pour chaque exercice
 void exercice_4_1(); // Calcul avec opérateurs
