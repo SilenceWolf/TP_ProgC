@@ -1,5 +1,7 @@
 #ifndef LISTE_H
 #define LISTE_H
+#include <stdio.h>
+#include <string.h>
 
 
 void init_liste(struct liste_couleurs *liste) {
@@ -20,3 +22,4 @@ void parcours(struct liste_couleurs *liste) {
 }
 
 #endif
+
