@@ -1,3 +1,6 @@
+#include <stdio.h>
+#include <string.h>
+
 void exercice_4_2() {
     int choix;
     char nom_de_fichier[100];
@@ -22,3 +25,4 @@ void exercice_4_2() {
         printf("Choix invalide.\n");
     }
 }
+
