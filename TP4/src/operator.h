@@ -1,5 +1,7 @@
 #ifndef OPERATOR_H
 #define OPERATOR_H
+#include <stdio.h>
+#include <string.h>
 
 
 int somme(int a, int b) { return a + b; }
@@ -12,4 +14,5 @@ int ou(int a, int b) { return a | b; }
 int negation(int a) { return ~a; }
 
 #endif
+
 
