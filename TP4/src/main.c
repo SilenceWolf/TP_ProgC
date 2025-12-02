@@ -2,9 +2,9 @@
 #include <string.h>
 
 
-#include "operator.h"  
-#include "fichier.h"   
-#include "liste.h"    
+#include "operator.c"  
+#include "fichier.c"   
+#include "liste.c"    
 
 // Déclaration des fonctions pour chaque exercice
 void exercice_4_1(); // Calcul avec opérateurs
