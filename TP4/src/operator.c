@@ -1,3 +1,4 @@
+#include "operator.h"
 void exercice_4_1() {
     int num1, num2;
     char op;
@@ -22,3 +23,4 @@ void exercice_4_1() {
         default: printf("Opérateur invalide\n"); break;
     }
 }
+
